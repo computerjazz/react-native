@@ -214,6 +214,8 @@ public class ReactHorizontalScrollView extends HorizontalScrollView
 
   @Override
   protected void onLayout(boolean changed, int l, int t, int r, int b) {
+    setClipChildren(false);
+    
     // Call with the present values in order to re-layout if necessary
     scrollTo(getScrollX(), getScrollY());
   }
